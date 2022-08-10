@@ -9,16 +9,18 @@
 Console.WriteLine("Введите трехзначное число:  ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int SecondDigit(int num)
+void SecondDigit(int num)
 {
+    if (num < 0) num = num * (-1);
     if (num > 99 && num < 1000)
     {
         int second = (num % 100) / 10;
-        return second;
+        Console.WriteLine($"Вторая цифра трехзначного числа {number} -> {second}");
     }
-    return -1;
+    else
+        Console.WriteLine("Введенное число не трехзначное, повторите попытку");
 }
 
-int result = SecondDigit(number);
-Console.WriteLine($"Вторая цифра трехзначного числа {number} -> {result}");
+SecondDigit(number);
+
 
