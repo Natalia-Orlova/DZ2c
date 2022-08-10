@@ -15,12 +15,13 @@ void SecondDigit(int num)
     if (num > 99 && num < 1000)
     {
         int second = (num % 100) / 10;
-        Console.WriteLine($"Вторая цифра трехзначного числа {number} -> {second}");
+        Console.WriteLine($"Вторая цифра указанного числа -> {second}");
     }
     else
         Console.WriteLine("Введенное число не трехзначное, повторите попытку");
 }
 
 SecondDigit(number);
+SecondDigit(154);
 
 
