@@ -22,6 +22,5 @@ void SecondDigit(int num)
 }
 
 SecondDigit(number);
-SecondDigit(154);
 
 
